@@ -1,0 +1,202 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, yellow, green, black); /* Градиент цветов */
+    min-height: 100vh;
+    color: white;
+}
+
+/* Горизонтальное меню */
+.main-header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 0;
+}
+
+.main-header nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-header nav a:hover {
+    color: limegreen;
+}
+
+/* Карточки товаров */
+.product-catalog {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+}
+
+.product-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: gold;
+}
+
+/* Оформление новостей */
+.news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.news-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: white; /* Белый цвет текста */
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.news-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.news-detail img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.news-detail h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+/* Блок 'О нас' */
+.about-us-content {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.about-us-content p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about-us-content address {
+    font-style: normal;
+    color: lightgrey;
+}
+
+.about-us-content a {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+#hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: block; /* Центрируем изображение */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.action-item {
+    text-align: center;
+    flex: 1;
+    margin: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Темно-зеленый квадратик */
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.action-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.action-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.action-button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.action-button {
+    background-color: limegreen;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.action-button:hover {
+    background-color: darkgreen;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
